@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;  
+}
+
+p{
+    font-size: 14px;
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    background-color: rgba(35, 32, 32, 0.841);
+    color:#fff;
+}
+
+.logo{
+    height: 100px;
+}
+
+.logoySlogan{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+    column-gap: 20px;
+}
+
+.list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.green{
+    color: green;
+}
+
+.carruselPhoto{
+    display: flex;
+}
+
+.carruselPhoto img{
+/*background-image: url(./Images/hawaii.jpg);
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;*/
+width:100%;
+z-index: -1;
+height: 450px;
+}
+
+.presentacionBackground{
+    position: absolute;
+    color:#fff;
+    text-align: right;
+    padding: 20px;
+    width:250px;
+    z-index: 1;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-top: 10px;
+}
+
+.operador{
+   color:#000;
+   z-index: 1;
+   border:2px solid #fff;
+   border-radius: 7px;
+   height: 30px;
+}
+
+
+.comprarTicket{
+    position: relative;
+    background-color: green;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    height: 30px;
+}
+
+h5, h2{
+    font-weight: lighter;
+}
+
+.titulo{
+    text-align: center;
+    height: 40px;
+    margin: 20px 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width:340px;
+    height: 500px;
+    border: 1px solid #0000003a;
+    border-radius: 10px;
+   
+}
+
+.card img{
+    display: flex;
+    width:340px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.card p{
+display: flex;
+position: relative;
+padding: 20px;
+text-align:left;
+
+}
+
+.botonesLenguajes{
+    display:flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 10px;
+    column-gap: 5px;
+}
+
+.javaScript{
+    background-color: orange;
+    border-radius: 5px;
+    border:none;
+    height: 18px;
+    font-size: 13px;
+    padding: 4px;
+
+}
+
+.react{
+    background-color:cadetblue;
+    border-radius: 5px;
+    border:none;
+    height: 20px;
+    font-size: 13px;
+    padding: 4px;
+    color:#fff;
+}
+
+.negocios{
+        background-color:gray;
+        border-radius: 5px;
+        border:none;
+        height: 20px;
+        font-size: 13px;
+        padding: 4px;
+        color:#fff;
+    }
+
+.startUp{
+        background-color:red;
+        border-radius: 5px;
+        border:none;
+        height: 20px;
+        font-size: 13px;
+        padding: 4px;
+        color:#fff;
+    }
+
+    .name{
+        padding-left: 20px;
+    }
+
+    .body{
+        font-size: 14px;
+    }
+
+    .imagenes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width:100%;
+        height:300px;
+        margin-top:30px;
+        column-gap: 5px;
+    }
+
+    .imagenes img{
+        display: flex;
+        width:50%;
+        height: 300px;
+
+    }
+
+    .imagenes span{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        background-color: rgb(49, 48, 48);
+        color:#fff;
+        height: 300px;
+      
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .formuYcomentarios{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        width:850px;
+        margin: auto;
+    }
+
+    .formulario input{
+        width:400px;
+        height: 20px;
+        padding-left: 5px;
+
+    }
+
+    .comentario input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:810px;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .comentario p{
+        margin-bottom: 10px;
+        color: rgb(172, 168, 168)
+    }
+
+    .comentario button{
+        background-color:#8DB600;
+        width:830px;
+        height: 40px;
+        color:#fff;
+        border:none;
+    }
+
+    .footer{
+        background-color: rgb(15, 91, 146);
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .menuFooter{
+
+    }
