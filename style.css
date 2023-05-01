@@ -73,7 +73,7 @@ p{
 .backgroundImg{
     position: relative;
     z-index: 10;
-    background-color: rgba(14, 14, 14, 0.566);
+    background-color: rgba(14, 14, 14, 0.605);
     height: 100%;
 }
 
@@ -414,5 +414,14 @@ text-align:left;
         border-radius: 7px;
         border: 1px solid rgb(61, 58, 58);
     }
+
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
+
+
+
+
 
 

@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Bs</title>
 </head>
@@ -25,11 +23,11 @@
             </div>
 
             <ul class="list">
-                <li><a ref="#">La conferencia</a></li>
-                <li><a ref="#">Los Oradores</a></li>
-                <li><a ref="#">El lugar y fecha</a></li>
-                <li><a ref="#">Conviertete en orador</a></li>
-                <li><a ref="#" class="green">Comprar Tickets</a></li>
+                <li><a href="#laConferencia">La conferencia</a></li>
+                <li><a href="#losOradores">Los Oradores</a></li>
+                <li><a href="#lugarYfecha">El lugar y fecha</a></li>
+                <li><a href="#conviertete">Conviertete en orador</a></li>
+                <li><a href="#comprarTickets" class="green">Comprar Tickets</a></li>
             </ul>
 
         </nav>
@@ -37,13 +35,13 @@
         <div class="carruselPhoto">
             <div class="backgroundImg">
             <div class="presentacionBackground">
-            <h1>Conferencia Bs As</h1>
+            <h1 id="laConferencia">Conferencia Bs As</h1>
             <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                 
 
             <div class="botones">
                 <button class="operador">Quiero ser orador!</button>
-                <button class="comprarTicket">Comprar Tickets</button>
+                <button class="comprarTicket" id="comprarTickets">Comprar Tickets</button>
             </div>
         
             </div>
@@ -55,7 +53,7 @@
 
     <section>
 
-<div class="titulo"> 
+<div class="titulo" id="losOradores"> 
 <h5>CONOCE A LOS</h5>
 <H2>ORADORES</H2>
 </div>
@@ -96,7 +94,7 @@
 <div class="imagenes">
 <img src="./Images/honolulu.jpg" alt="Honolulu" >
 <span>
-    <h2>Bs As - Octubre</h2>
+    <h2 id="lugarYfecha">Bs As - Octubre</h2>
     <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en Estados Unidos, Honolulo esla más sureña, de entre las principales cuidades estadounidenses.
         Aunque el nombre Honolulu se refiere al area urbana en la costa sureña de la isla Oahu
     la ciudad y el condado de Honolulu han formado una ciudad- consolidada consolidada que cubre toda la ciudad (apróximadamente 600km2 de superficie)  </p>
@@ -110,10 +108,11 @@
 
 <section class="formuYcomentarios">
 
-    <div class="titulo"> 
+
+    <div class="titulo" id="conviertete"> 
         <h5>CONVIERTE EN UN ORADOR</h5>
         <H2>ORADOR</H2>
-        <p>Anótate como orador para dar una charla ignite. Cuéntanos de que quieres hablar!</p>
+        <p>Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de que quieres hablar!</p>
     
     </div>
 
