@@ -6,7 +6,7 @@
 }
 
 body{
-    width:99vw;
+    max-width:99vw;
     height:100vh;  
 }
 
@@ -39,8 +39,8 @@ p{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 70%;
-    column-gap: 2%;
+    column-gap: 1%;
+    width:100%;
     color:#fff;
     flex-wrap: wrap;
     font-size: 0.9rem;
@@ -52,6 +52,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-right: 12px;
     cursor: pointer;
 }
 
@@ -87,10 +88,13 @@ p{
     text-align: right;
     z-index: 100;
     height: 100%;
-    padding-right: 30px;
+    font-size: 1em;
+    padding-right: 5%;
+    flex-wrap:wrap;
 }
 
 .presentacionBackground>p{
+    position: relative;
     max-width:470px;
     color:#fff;
 
@@ -98,12 +102,15 @@ p{
 
 
 .botones{
+    position: relative;
     display: flex;
     flex-direction: row;
     column-gap: 20px;
     margin-top: 10px;
     max-width:500px;
     margin-left: 50px;
+    flex-wrap: wrap;
+
 }
 
 .operador{
