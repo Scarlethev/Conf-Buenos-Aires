@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-sm">
+
+            <div class="logoySlogan">
+                <a href="./index.html"><img class="logo" src="./Images/codoacodo.png" alt="Logo Codo a codo"></a>
+                <a href="./index.html">
+                    <p>Conferencia Bs As</p>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" name="button" data-bs-toggle="collapse"
+                data-bs-target="#opciones" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="opciones">
+
+                <ul class="list">
+                    <li>
+                        <a href="#laConferencia">La conferencia</a>
+                    </li>
+
+                    <li>
+                        <a href="#losOradores">Los Oradores</a>
+                    </li>
+
+                    <li>
+                        <a href="#lugarYfecha">El lugar y fecha</a>
+                    </li>
+
+                    <li>
+                        <a href="#conviertete">Conviertete en orador</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="green">Comprar Tickets</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+
+        <main>
+
+            <div class="contenedorCompraTickets">
+
+                <div class="descuentos" id="descuento">
+
+                    <div class="estudiantes border-primary animate__animated animate__zoomIn">
+                        <h4>Estudiantes</h4>
+                        <p>Tiene un descuento</p>
+                        <p><b>80%</b></p>
+                        <p class="chica">* presentar documentación</p>
+                    </div>
+
+                    <div class="estudiantes border-info animate__animated animate__zoomIn">
+                        <h4>Trainee</h4>
+                        <p>Tiene un descuento</p>
+                        <p><b>50%</b></p>
+                        <p class="chica">* presentar documentación</p>
+
+                    </div>
+                    <div class="estudiantes border-warning animate__animated animate__zoomIn">
+                        <h4>Junior</h4>
+                        <p>Tiene un descuento</p>
+                        <p><b>15%</b></p>
+                        <p class="chica">* presentar documentación</p>
+                    </div>
+                </div>
+
+                <h5>VENTA</h5>
+
+                <h1>VALOR DEL TICKET $200</h1>
+
+                <form id="form" action="">
+                <div class="input-group mb-sm-1 gap-3">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Username"
+                        aria-describedby="basic-addon1" id="nombre">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Username"
+                        aria-describedby="basic-addon1" id="apellido">
+                </div>
+
+                <div class="input-group mb-sm-1">
+                    <input type="email" class="form-control" placeholder="Correo" aria-label="Username"
+                        aria-describedby="basic-addon1" id="email"  pattern=".+@globex\.com" size="30" required>
+                </div>
+
+                <div class="input-group mb-sm-1 gap-3 d-flex">
+                    
+                <div class="cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" class="form-control" placeholder="Cantidad" aria-label="Username" id="cantidad">
+                </div>
+
+                    <div class="categoria">
+                        <label for="categoriasSelect">Categoria</label>
+                    <select id="categoriasSelect">
+                        <option class="opcion" value="0" selected>Sin categoria</opcion>
+                        <option class="opcion" value="1">Estudiantes</opcion>
+                        <option class="opcion" value="2">Trainee</opcion>
+                        <option class="opcion" value="3">Junior</opcion>
+                    </select>
+                </div>
+
+                </div>
+
+                <div class="input-group mb-sm-1">
+                    <p id="totalApagar"class="form-control bg-info p-3 fs-5">Total a Pagar $</p>
+                </div>
+            </form>
+
+
+                <div class="botonesDos">
+                    <button class="deleteOroverview" type="submit" id="borrar">Borrar</button>
+                    <input class="deleteOroverview" type="submit" id="resumen" data-bs-toggle="modal" data-bs-target="#exampleModal" value="Resumen"></button>
+                 </div>
+
+            
+            
+    <!--modal -->
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </main>
+
+        <footer class="footer">
+            <nav>
+                <ul class="menuFooter">
+                    <li><a href="#"></a>Preguntas frecuentes</li>
+                    <li><a href="#"></a>Contáctanos</li>
+                    <li><a href="#"></a>Prensa</li>
+                    <li><a href="#"></a>Conferencias</li>
+                    <li><a href="#"></a>Terminos y condiciones</li>
+                    <li><a href="#"></a>Privacidad</li>
+                    <li><a href="#"></a>Estudiantes</li>
+                </ul>
+            </nav>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+</body>
+
+</html>

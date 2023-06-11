@@ -11,13 +11,15 @@ body{
 }
 
 p{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .navbar{
     display:flex;
     flex-direction: row;
     width:100%;
+
+    
     align-items: center;
     background-color: rgba(35, 32, 32, 0.841);
 }
@@ -43,7 +45,7 @@ p{
     width:100%;
     color:#fff;
     flex-wrap: wrap;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     
 }
 
@@ -426,6 +428,150 @@ text-align:left;
         text-decoration: none;
         color:#fff;
     }
+
+    /*Detalles*/
+
+    .contenedorCompraTickets{
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        width:50%;
+        margin:auto;
+        row-gap: 10px;
+    }
+
+
+    .descuentos{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        column-gap: 10px;
+        margin-top: 50px;
+    }
+
+    .estudiantes{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        text-align: center;
+        padding: 15px;
+        border: 2.5px solid;
+        width: 270px;
+        height: auto;
+    }
+
+
+
+
+    .estudiantes p{
+        font-size: 18px;
+    }
+
+    .estudiante > p > .chica{
+        font-size: 7px;
+    }
+    
+h1,h2,h3,h4,h5,h6{
+    font-weight:bold;
+}
+
+.botonesDos{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.deleteOroverview{
+    position: relative;
+    background-color:#8DB600;
+    width:50%;
+    height: 40px;
+    color:#fff;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+main{
+    height: auto;
+    min-height: 680px;
+}
+
+.input-group .btn{
+    width:30%;
+}
+
+.cantidad{
+    width:48.5%;
+}
+
+.categoria{
+    width:48.5%;
+}
+
+.categoria select{
+    display: flex;
+    position: relative;
+    width:100%;
+    height: 35px;
+}
+
+.opcion{
+    display: flex;
+    position: relative;
+    width:100%;
+}
+
+.izq{
+    text-align: start;
+}
+
+/* CLASES DE FORMULARIO */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background: rgb(240, 173, 184);
+    margin: 15% auto;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-content p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: #000;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
