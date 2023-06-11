@@ -479,6 +479,8 @@ h1,h2,h3,h4,h5,h6{
 .botonesDos{
     display: flex;
     flex-direction: row;
+    width: 60%;
+    margin: auto;
 
 }
 
