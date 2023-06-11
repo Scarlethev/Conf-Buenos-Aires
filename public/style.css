@@ -436,11 +436,11 @@ text-align:left;
         flex-direction: column;
         height: auto;
         text-align: center;
-        width:50%;
+        width:100%;
         margin:auto;
         row-gap: 10px;
+      
     }
-
 
     .descuentos{
         display: flex;
@@ -448,6 +448,8 @@ text-align:left;
         justify-content:center;
         column-gap: 10px;
         margin-top: 50px;
+        row-gap: 10px;
+        flex-wrap: wrap;
     }
 
     .estudiantes{
@@ -461,9 +463,6 @@ text-align:left;
         width: 270px;
         height: auto;
     }
-
-
-
 
     .estudiantes p{
         font-size: 18px;
@@ -499,23 +498,41 @@ main{
     min-height: 680px;
 }
 
+.formulario{
+    display:flex;
+    flex-direction: column;
+    min-width: 250px;
+    width:60%;
+    margin: auto;
+}
+
+.input-group input{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
 .input-group .btn{
     width:30%;
 }
 
 .cantidad{
+    min-width: 250px;
     width:48.5%;
 }
 
 .categoria{
+    min-width: 250px;
     width:48.5%;
 }
 
 .categoria select{
     display: flex;
+    min-width: 200px;
     position: relative;
     width:100%;
     height: 35px;
+    margin-bottom: 10px;
 }
 
 .opcion{
@@ -528,51 +545,15 @@ main{
     text-align: start;
 }
 
-/* CLASES DE FORMULARIO */
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+@media (min-width: 200px) and (max-width: 375px){
+    .inputs input{
+        display:flex;
+        min-width: 300px;
+        width:100%;
+        flex-wrap: wrap;
+    }
 }
-
-.modal-content {
-    background: rgb(240, 173, 184);
-    margin: 15% auto;
-    padding-bottom: 20px;
-    border: 1px solid black;
-    width: 80%;
-    max-width: 400px;
-}
-
-.modal-content p{
-    font-size: 20px;
-    text-align: center;
-    font-weight: bolder;
-    color: #000;
-}
-
-.close {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 10px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 
 
 
