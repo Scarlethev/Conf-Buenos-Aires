@@ -4,8 +4,8 @@ let itemCategoria = document.getElementsByClassName("opcion")
 let totalApagar = document.getElementById("totalApagar");
 let borrar = document.getElementById("borrar")
 let resumen = document.getElementById("resumen")
+let botonEnviar=document.getElementById("enviar")
 let form = document.getElementById("form")
-const modal= document.getElementById("modal")
 
 // valor del ticket
 let precio = 200;
@@ -51,19 +51,23 @@ totalApagar.addEventListener("click", () => {
 //BOTON DE BORRAR
 
 borrar.addEventListener("click", function () {
+    if(nombre.value !="" || apellido.value !="" || cantidad.value !="" || email.value !="" ){
     form.reset()
-    totalApagar.innerText = "Total a pagar"
+    totalApagar.innerText = "Total a Pagar $"
+    }
 
+    else{
+        Swal.fire("Los campos se encuentran vacios")
+    }
 })
 
 // BOTON DE RESUMEN
 
 resumen.addEventListener("click", function(){
-    if(totalApagar.innerText !== "Total a Pagar $"){
+    if(totalApagar.innerText != "Total a Pagar $"){
     Swal.fire(
-        'Tus datos han sido cargado con exito!',
-        'se te enviará el resumen a tu casilla de correo',
-        'success'
+    `Estimad@ ${nombre.value} ${apellido.value},
+      la compra de ${cantidad.value} tickets son $ ${parseInt(cantidad.value) * precio}`
       )}
 
       else{
@@ -114,7 +118,40 @@ function validacion() {
     }
 
 
-
-    
 }
 
+let nombrePrimer = document.getElementById("nombrePrimer");
+let apellidoPrimer = document.getElementById("apellidoPrimer");
+let mensaje = document.getElementById("mensaje");
+
+//BOTON ENVIAR
+
+botonEnviar.addEventListener("click", function(){
+    if(nombrePrimer.value != "" && apellidoPrimer != "" && mensaje != ""){
+        Swal.fire(
+
+        ` Estimada ${nombrePrimer.value} ${apellidoPrimer.value} ,
+          Su mensaje se ha enviado satisfactoriamente 
+          sussefull`
+          )}
+    
+          else{
+            Swal.fire(
+                "Complete sus datos para generar resumen"
+              )}
+    
+          });
+
+// console.log(nombrePrimer.value)
+
+// botonEnviar.addEventListener("click", function(e){
+//         console.log(nombrePrimer(e)
+//       })
+    
+
+    // 
+    // if(nombrePrimer.value != "" && apellidoPrimer.value != "" && mensaje.value !="")
+    // Swal.fire(
+    //     'Tus datos han sido cargado con exito!'
+    //   )}
+    

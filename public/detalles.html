@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
-    <title>Document</title>
+    <title>Compra de Tickets</title>
 </head>
 
 <body>
@@ -92,16 +92,16 @@
 
                 <h1>VALOR DEL TICKET $200</h1>
 
-                <form id="form" action="" class="formulario">
+                <form id="form" action="" class="formularioDos">
                 <div class="input-group mb-sm-1 gap-3 inputs">
                     <input type="text" class="form-control inputs" placeholder="Nombre" aria-label="Username"
-                        aria-describedby="basic-addon1" id="nombre">
+                        aria-describedby="basic-addon1" id="nombre" required>
                     <input type="text" class="form-control inputs" placeholder="Apellido" aria-label="Username"
-                        aria-describedby="basic-addon1" id="apellido">
+                        aria-describedby="basic-addon1" id="apellido" required>
                 </div>
 
                 <div class="input-group mb-sm-1">
-                    <input type="email" class="form-control" placeholder="Correo" aria-label="Username"
+                    <input type="email" class="form-control cantidad" placeholder="Correo" aria-label="Username"
                         aria-describedby="basic-addon1" id="email"  pattern=".+@globex\.com" size="30" required>
                 </div>
 
@@ -132,7 +132,7 @@
 
                 <div class="botonesDos">
                     <button class="deleteOroverview" type="submit" id="borrar">Borrar</button>
-                    <input class="deleteOroverview" type="submit" id="resumen" data-bs-toggle="modal" data-bs-target="#exampleModal" value="Resumen"></button>
+                    <input class="deleteOroverview" type="submit" id="resumen" value="Resumen"></button>
                  </div>
 
 

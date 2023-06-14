@@ -108,6 +108,7 @@ p{
     display: flex;
     flex-direction: row;
     column-gap: 20px;
+    row-gap: 20px  ;
     margin-top: 10px;
     max-width:500px;
     margin-left: 50px;
@@ -144,7 +145,6 @@ h5, h2{
 
 .titulo{
     text-align: center;
-    height: 40px;
     margin: 20px 20px;
 }
 
@@ -164,9 +164,10 @@ h5, h2{
     flex-direction: column;
     min-width:340px;
     width:3%;
-    height: 500px;
+    height: 550px;
     border: 1px solid #0000003a;
     border-radius: 10px;
+    min-height: 550px;
    
 }
 
@@ -182,9 +183,11 @@ h5, h2{
 .card p{
 display: flex;
 position: relative;
-padding: 20px;
+padding: 5px;
 text-align:left;
-
+font-size: 0.9rem;
+align-items: center;
+justify-content: center;
 }
 
 .botonesLenguajes{
@@ -199,9 +202,11 @@ text-align:left;
     background-color: orange;
     border-radius: 5px;
     border:none;
-    height: 18px;
+    height: 24px;
     font-size: 13px;
     padding: 4px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -209,38 +214,48 @@ text-align:left;
     background-color:cadetblue;
     border-radius: 5px;
     border:none;
-    height: 20px;
-    font-size:0.9rem;
+    height: 24px;
+    font-size:13px;
     padding: 4px;
     color:#fff;
+    align-items: center;
+    justify-content: center;
 }
 
 .negocios{
         background-color:gray;
         border-radius: 5px;
         border:none;
-        height: 20px;
-        font-size: 0.9rem;
+        height: 24px;
+        font-size: 13px;
         padding: 4px;
         color:#fff;
+        align-items: center;
+        justify-content: center;
     }
 
 .startUp{
         background-color:red;
         border-radius: 5px;
         border:none;
-        height: 20px;
-        font-size: 0.9rem;
+        height: 24px;
+        font-size: 13px;
         padding: 4px;
         color:#fff;
+        align-items: center;
+        justify-content: center;
     }
 
     .name{
         padding-left: 20px;
+        margin-top: 20px;
     }
 
     .body{
         font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 
     .imagenes{
@@ -274,8 +289,10 @@ text-align:left;
         width:630px;
         background-color: rgba(49, 48, 48, 0.795);
         color:#fff;
-        height: 300px;
-        margin: auto;
+        height: auto;
+        min-height: 300px;
+        padding-bottom: 10px;
+        padding: 10px;
       
     }
 
@@ -289,11 +306,9 @@ text-align:left;
     }
 
     .imagenes span p{
-        padding-right: 30px;
-        text-align: justify;
-        font-size: 0.7rem;
-        margin-left: 20px;
-        margin-right: 20px;
+         padding-right: 30px; 
+        text-align: justify; 
+        /* font-size: 0.7rem; */ 
         line-height: 1.1;
     }
 
@@ -301,19 +316,17 @@ text-align:left;
         background-color: rgba(49, 48, 48, 0.795);
         opacity: 0.5;
         color:#fff;
-        width:100px;
+        width:120px;
         height: 30px;
         border:1px solid #fff;
-        margin-top: 15px;
-        margin-left: 20px;
         border-radius: 5px;
+        margin-left: 20px;
         cursor: pointer;
     }
 
     .titulo{
         display: flex;
         flex-direction: column;
-        row-gap: 7px;
         height: auto;
     }
 
@@ -321,34 +334,36 @@ text-align:left;
         display: flex;
         flex-direction: column;
         row-gap: 25px;
-        width:100%
+        width:100%;
     }
 
     .contenedorFormulario{
         display: flex;
         flex-direction: column;
-        width:80%;
+        width: 80%;
         margin: auto;
-
     }
 
     .formulario{
         position: relative;
         display: flex;
         flex-direction: row;
-        column-gap: 20px;
-        row-gap: 15px;
+        column-gap: 15px;
         flex-wrap: wrap;
         width:100%;
-        justify-content: center;
+        margin: auto;
+        justify-content:space-evenly;
+        row-gap: 15px;
     }
 
-    .formulario input{
-        height: 25px;
-        padding-left: 0.1%;
-        width:48%;
-        border:1px solid gray;
-
+    .formulario > input{
+        position: relative;
+        height: 40px;
+        min-width: 300px;
+        justify-content:space-evenly;
+        width:650px;
+        padding: 20px;
+        border-radius: 10px;
     }
 
     .comentario{
@@ -367,6 +382,7 @@ text-align:left;
         position: relative;
         width:100%;
         height:200px;
+        border-radius: 15px;
     }
 
     .comentario p{
@@ -381,7 +397,7 @@ text-align:left;
         font-size: 1rem;
     }
 
-    .comentario > button{
+    .comentario > .button{
         position: relative;
         background-color:#8DB600;
         max-width: 800px;
@@ -409,6 +425,7 @@ text-align:left;
         align-items: center;
         list-style: none;
         flex-wrap: wrap;
+        column-gap: 10px;
        
     }
 
@@ -417,11 +434,6 @@ text-align:left;
         margin-top: 40px;
         max-width:100px;
         cursor: pointer;
-    }
-
-    input{
-        border-radius: 7px;
-        border: 1px solid rgb(61, 58, 58);
     }
 
     a{
@@ -500,17 +512,25 @@ main{
     min-height: 680px;
 }
 
-.formulario{
+.formularioDos{
     display:flex;
     flex-direction: column;
     min-width: 250px;
     width:60%;
     margin: auto;
+    row-gap: 20px;
+}
+
+.input-group{
+    justify-content: center;
 }
 
 .input-group input{
     display:flex;
     flex-wrap: wrap;
+    min-width: 100%;
+    height: auto;
+    padding-left: 10px;   
 }
 
 
